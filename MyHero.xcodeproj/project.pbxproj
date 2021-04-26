@@ -13,6 +13,11 @@
 		D6C9A0B1261EAC09005F0707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C9A0B0261EAC09005F0707 /* Assets.xcassets */; };
 		D6C9A0B4261EAC09005F0707 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C9A0B3261EAC09005F0707 /* Preview Assets.xcassets */; };
 		D6C9A0B7261EAC09005F0707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C9A0B5261EAC09005F0707 /* LaunchScreen.storyboard */; };
+		D6C9A0C3261EAEAB005F0707 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9A0C2261EAEAB005F0707 /* Hero.swift */; };
+		D6C9A0C7261EAEC2005F0707 /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9A0C6261EAEC2005F0707 /* DummyHeroes.swift */; };
+		D6C9A0D4261EB484005F0707 /* HeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9A0D3261EB484005F0707 /* HeroList.swift */; };
+		D6C9A0D7261EB496005F0707 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9A0D6261EB496005F0707 /* HeroDetail.swift */; };
+		D6C9A0DA261EB49F005F0707 /* HeroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9A0D9261EB49F005F0707 /* HeroRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		D6C9A0B3261EAC09005F0707 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6C9A0B6261EAC09005F0707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6C9A0B8261EAC09005F0707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C9A0C2261EAEAB005F0707 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		D6C9A0C6261EAEC2005F0707 /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		D6C9A0D3261EB484005F0707 /* HeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroList.swift; sourceTree = "<group>"; };
+		D6C9A0D6261EB496005F0707 /* HeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
+		D6C9A0D9261EB49F005F0707 /* HeroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,9 @@
 		D6C9A0A9261EAC08005F0707 /* MyHero */ = {
 			isa = PBXGroup;
 			children = (
-				D6C9A0AA261EAC08005F0707 /* AppDelegate.swift */,
-				D6C9A0AC261EAC08005F0707 /* SceneDelegate.swift */,
-				D6C9A0AE261EAC08005F0707 /* ContentView.swift */,
+				D6C9A0C1261EADE9005F0707 /* View */,
+				D6C9A0C0261EADE0005F0707 /* Model */,
+				D6C9A0BF261EADCE005F0707 /* Base */,
 				D6C9A0B0261EAC09005F0707 /* Assets.xcassets */,
 				D6C9A0B5261EAC09005F0707 /* LaunchScreen.storyboard */,
 				D6C9A0B8261EAC09005F0707 /* Info.plist */,
@@ -73,6 +83,35 @@
 				D6C9A0B3261EAC09005F0707 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6C9A0BF261EADCE005F0707 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D6C9A0AA261EAC08005F0707 /* AppDelegate.swift */,
+				D6C9A0AC261EAC08005F0707 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D6C9A0C0261EADE0005F0707 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C9A0C2261EAEAB005F0707 /* Hero.swift */,
+				D6C9A0C6261EAEC2005F0707 /* DummyHeroes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6C9A0C1261EADE9005F0707 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C9A0AE261EAC08005F0707 /* ContentView.swift */,
+				D6C9A0D3261EB484005F0707 /* HeroList.swift */,
+				D6C9A0D6261EB496005F0707 /* HeroDetail.swift */,
+				D6C9A0D9261EB49F005F0707 /* HeroRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +186,12 @@
 			files = (
 				D6C9A0AB261EAC08005F0707 /* AppDelegate.swift in Sources */,
 				D6C9A0AD261EAC08005F0707 /* SceneDelegate.swift in Sources */,
+				D6C9A0C7261EAEC2005F0707 /* DummyHeroes.swift in Sources */,
 				D6C9A0AF261EAC08005F0707 /* ContentView.swift in Sources */,
+				D6C9A0C3261EAEAB005F0707 /* Hero.swift in Sources */,
+				D6C9A0D4261EB484005F0707 /* HeroList.swift in Sources */,
+				D6C9A0DA261EB49F005F0707 /* HeroRow.swift in Sources */,
+				D6C9A0D7261EB496005F0707 /* HeroDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
